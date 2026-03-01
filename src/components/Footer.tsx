@@ -19,7 +19,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-0.5 text-[var(--fg-brand-primary)] hover:underline underline-offset-2 transition-all"
               >
-                Start here
+                Website link here
                 <ArrowUpRight className="w-3.5 h-3.5 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
               </a>
             </p>
