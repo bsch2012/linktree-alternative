@@ -68,7 +68,7 @@ function ResourceCardComponent({
       tabIndex={isLive ? 0 : undefined}
     >
       {/* Color fill area */}
-      <div className="h-48 relative bg-[#191919] rounded-t-[11px]">
+      <div className="h-48 relative bg-[#2a2a2a] rounded-t-[11px]">
         {/* Badge - Top Right */}
         <div className="absolute top-2 right-2 sm:top-3 sm:right-3 z-10">
           <Badge text={badgeText} variant={card.badge} />

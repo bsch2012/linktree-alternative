@@ -38,7 +38,7 @@ export function RecentBlogs() {
             className="blog-card group flex gap-3 sm:gap-4"
           >
             {/* Color fill square */}
-            <div className="w-24 h-24 flex-shrink-0 rounded-lg bg-[#191919]" />
+            <div className="w-24 h-24 flex-shrink-0 rounded-lg bg-[#2a2a2a]" />
 
             {/* Content */}
             <div className="flex-1 min-w-0 flex flex-col justify-center gap-1">
