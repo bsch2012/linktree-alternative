@@ -475,9 +475,12 @@ export const siteConfig: SiteConfig = {
   // ============================================
   blog: {
     enabled: true,
-    feedUrl: "https://opensession.substack.com/feed",
+    // Add your RSS feed URL to fetch live blog posts (e.g., "https://yourblog.substack.com/feed")
+    // See docs/BLOG_RSS_SETUP.md for the dynamic RSS component
+    feedUrl: "",
     title: "Recent Blogs",
-    subscribeUrl: "https://opensession.substack.com",
+    // Add your Substack URL to show a subscribe form (e.g., "https://yourblog.substack.com")
+    subscribeUrl: "",
   },
 };
 
