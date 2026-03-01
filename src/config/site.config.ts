@@ -184,7 +184,7 @@ export const siteConfig: SiteConfig = {
   // ============================================
   theme: {
     // Primary accent color (used for buttons, links, highlights)
-    accentColor: "#3b82f6", // Blue - change to your brand color
+    accentColor: "#fe5102", // Aperol Orange - change to your brand color
     // Dark mode background
     darkBg: "#191919",
     // Light mode background

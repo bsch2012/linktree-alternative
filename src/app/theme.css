@@ -1,12 +1,12 @@
 /**
  * Linktree Alternative Theme
  *
- * Color Strategy: "Warm Neutrals with Blue Accent"
+ * Color Strategy: "Warm Neutrals with Aperol Orange Accent"
  * Uses Charcoal and Vanilla as foundation for warmth, with a customizable
- * blue accent color for interactive elements.
+ * orange accent color for interactive elements.
  *
  * Primary Colors:
- * - Accent Blue (#3b82f6) - Primary accent for CTAs, links, badges
+ * - Accent Orange (#fe5102) - Primary accent for CTAs, links, badges
  * - Charcoal (#191919) - Warm dark neutral, replaces pure black
  * - Vanilla (#FFFAEE) - Warm light neutral, replaces pure white
  *
@@ -17,19 +17,19 @@
    PRIMITIVE COLOR SCALES
    ============================================ */
 :root {
-  /* Brand Scale (Blue #3b82f6) - Customize for your brand */
-  --color-brand-25: #f5f8ff;
-  --color-brand-50: #eff6ff;
-  --color-brand-100: #dbeafe;
-  --color-brand-200: #bfdbfe;
-  --color-brand-300: #93c5fd;
-  --color-brand-400: #60a5fa;
-  --color-brand-500: #3b82f6;
-  --color-brand-600: #2563eb;
-  --color-brand-700: #1d4ed8;
-  --color-brand-800: #1e40af;
-  --color-brand-900: #1e3a8a;
-  --color-brand-950: #172554;
+  /* Brand Scale (Aperol Orange #fe5102) - Customize for your brand */
+  --color-brand-25: #fffaf5;
+  --color-brand-50: #fff3eb;
+  --color-brand-100: #ffe4d4;
+  --color-brand-200: #ffc8a8;
+  --color-brand-300: #ffa370;
+  --color-brand-400: #ff7a38;
+  --color-brand-500: #fe5102;
+  --color-brand-600: #e64400;
+  --color-brand-700: #bf3600;
+  --color-brand-800: #992d05;
+  --color-brand-900: #7a280a;
+  --color-brand-950: #431302;
 
   /* Warm Gray Scale (tinted toward Vanilla for cohesive brand feel) */
   --color-gray-25: #fdfcfb;
