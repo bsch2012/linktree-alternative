@@ -1,9 +1,8 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { useState } from "react";
 import { SubscribeModal, hasResourceAccess } from "./SubscribeModal";
-import { siteConfig, withBasePath, type Resource } from "@/config/site.config";
+import { siteConfig, type Resource } from "@/config/site.config";
 
 // Custom icon component - stroke-based for consistent outline style
 function ExternalLinkIcon() {
@@ -43,7 +42,6 @@ function ResourceCardComponent({
   isLast: boolean;
   onCardClick: (card: Resource) => void;
 }) {
-  const [isHovered, setIsHovered] = useState(false);
   const isLive = card.badge === "live";
   const badgeText = card.badge === "coming-soon" ? "Coming Soon" : "Live";
 
@@ -62,58 +60,15 @@ function ResourceCardComponent({
   };
 
   return (
-    <motion.div
+    <div
       className={`resource-card w-full flex flex-col ${isLast ? "md:col-span-2" : ""} ${isLive ? "cursor-pointer" : ""}`}
-      onHoverStart={() => setIsHovered(true)}
-      onHoverEnd={() => setIsHovered(false)}
       onClick={handleClick}
       onKeyDown={handleKeyDown}
       role={isLive ? "button" : undefined}
       tabIndex={isLive ? 0 : undefined}
     >
-      {/* Image/Video Area - rounded-t-[11px] to account for 1px border */}
-      <div className="h-48 relative bg-[#191919] rounded-t-[11px] overflow-hidden">
-        {/* O1 - Default media (image or video) */}
-        {card.mediaType === "video" ? (
-          <motion.video
-            src={withBasePath(card.mediaDefault)}
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover object-top"
-            animate={{
-              scale: isHovered ? 1.02 : 1,
-              opacity: isHovered ? 0 : 1,
-            }}
-            transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
-          />
-        ) : (
-          <motion.img
-            src={withBasePath(card.mediaDefault)}
-            alt={card.title}
-            className="absolute inset-0 w-full h-full object-cover object-top"
-            animate={{
-              scale: isHovered ? 1.02 : 1,
-              opacity: isHovered ? 0 : 1,
-            }}
-            transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
-          />
-        )}
-
-        {/* O2 - Hover image with crossfade + subtle scale */}
-        <motion.img
-          src={withBasePath(card.imageHover)}
-          alt=""
-          className="absolute inset-0 w-full h-full object-cover object-top"
-          initial={{ opacity: 0, scale: 1.05 }}
-          animate={{
-            opacity: isHovered ? 1 : 0,
-            scale: isHovered ? 1 : 1.05,
-          }}
-          transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
-        />
-
+      {/* Color fill area */}
+      <div className="h-48 relative bg-[#191919] rounded-t-[11px]">
         {/* Badge - Top Right */}
         <div className="absolute top-2 right-2 sm:top-3 sm:right-3 z-10">
           <Badge text={badgeText} variant={card.badge} />
@@ -133,7 +88,7 @@ function ResourceCardComponent({
           <ExternalLinkIcon />
         </span>
       </div>
-    </motion.div>
+    </div>
   );
 }
 

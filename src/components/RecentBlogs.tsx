@@ -37,12 +37,8 @@ export function RecentBlogs() {
             href="#"
             className="blog-card group flex gap-3 sm:gap-4"
           >
-            {/* Placeholder image */}
-            <div className="w-24 h-24 relative flex-shrink-0 rounded-lg overflow-hidden bg-[#2a2a2a]">
-              <div className="w-full h-full flex items-center justify-center text-[var(--fg-quaternary)]">
-                <span className="text-xl font-bold font-accent">Blog</span>
-              </div>
-            </div>
+            {/* Color fill square */}
+            <div className="w-24 h-24 flex-shrink-0 rounded-lg bg-[#191919]" />
 
             {/* Content */}
             <div className="flex-1 min-w-0 flex flex-col justify-center gap-1">

@@ -32,12 +32,6 @@ export interface Resource {
   badge: "live" | "coming-soon";
   link: string;
   buttonLabel: string;
-  /** Path to default image/video */
-  mediaDefault: string;
-  /** Type of default media */
-  mediaType: "image" | "video";
-  /** Path to hover image */
-  imageHover: string;
 }
 
 export interface TagData {
@@ -258,9 +252,6 @@ export const siteConfig: SiteConfig = {
       badge: "live",
       link: "https://example.com/project-1",
       buttonLabel: "Link",
-      mediaDefault: "/images/placeholder-resource-01.svg",
-      mediaType: "image",
-      imageHover: "/images/placeholder-resource-02.svg",
     },
     {
       id: "project-2",
@@ -270,9 +261,6 @@ export const siteConfig: SiteConfig = {
       badge: "live",
       link: "https://example.com/project-2",
       buttonLabel: "Link",
-      mediaDefault: "/images/placeholder-resource-02.svg",
-      mediaType: "image",
-      imageHover: "/images/placeholder-resource-01.svg",
     },
     {
       id: "project-3",
@@ -282,9 +270,6 @@ export const siteConfig: SiteConfig = {
       badge: "coming-soon",
       link: "#",
       buttonLabel: "Link",
-      mediaDefault: "/images/placeholder-resource-01.svg",
-      mediaType: "image",
-      imageHover: "/images/placeholder-resource-02.svg",
     },
   ],
 
