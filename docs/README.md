@@ -1,5 +1,14 @@
 # Customization Guide
 
+## New to This Template?
+
+Start here if you're a designer or new to coding:
+
+- **[Quick Start Guide](QUICK_START.md)** — Get running in under 10 minutes
+- **[Asset Preparation](ASSETS.md)** — How to prepare logos, images, and icons
+
+---
+
 <!-- AI_CONTEXT
 This is the documentation index for a Linktree alternative template.
 Config file: src/config/site.config.ts (single source of truth for all content)
@@ -49,4 +58,8 @@ When a user asks you to customize this template:
 
 ## Other Resources
 
-- [README.md](../README.md) — Quick start, deployment, and commands
+- [Quick Start Guide](QUICK_START.md) — Beginner onboarding walkthrough
+- [Asset Preparation](ASSETS.md) — Logo, favicon, and icon specifications
+- [README.md](../README.md) — Project overview, deployment, and commands
+- [Design Resources](../README.md#design-resources) — Component libraries and inspiration
+- [Troubleshooting](../README.md#troubleshooting) — Common issues and solutions
