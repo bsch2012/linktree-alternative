@@ -1,5 +1,7 @@
 # Linktree Alternative
 
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 A beautiful, customizable link portal template built with Next.js 16, React 19, and Tailwind CSS 4. Features smooth animations, responsive design, and an optional CRT terminal background effect.
 
 ## Features
@@ -349,7 +351,7 @@ npm start        # Start production server
 
 ## License
 
-MIT License - feel free to use for personal or commercial projects.
+[Apache 2.0](LICENSE)
 
 ---
 
