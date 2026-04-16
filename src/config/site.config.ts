@@ -124,10 +124,10 @@ const COMMON_TAG_STYLES = { bg: "#f5f5f5", text: "#414651" };
 
 // Category colors for primary tags (accessible with white text)
 const CATEGORY_COLORS = {
-  Productivity: "#5326ab",
-  Design: "#e64400",
-  Coding: "#007acc",
-  Content: "#158f4a",
+  Affiliate: "#E1306C",
+  AI: "#F77737",
+  Creator: "#FD1D1D",
+  Social: "#E1306C",
 };
 
 export const siteConfig: SiteConfig = {
@@ -135,8 +135,8 @@ export const siteConfig: SiteConfig = {
   // METADATA
   // ============================================
   metadata: {
-    title: "Your Name | Links",
-    description: "All my important links in one place",
+    title: "BSCH.VAULT | Moments Locked, Stories Unlocked",
+    description: "AI Visual Struggler Explorer - Affiliate links, social media, and creative tools",
     favicon: "/favicon.png",
   },
 
@@ -153,12 +153,12 @@ export const siteConfig: SiteConfig = {
   // ============================================
   branding: {
     // Set to null to hide logo, or provide path like "/images/logo.svg"
-    logo: "/images/logo_wordmark_charcoal.svg",
-    logoAlt: "Open Session",
-    websiteUrl: "https://opensession.co",
-    tagline: "Your tagline goes here.",
-    email: "hello@example.com",
-    copyrightYear: "2024",
+    logo: null,
+    logoAlt: "BSCH.VAULT",
+    websiteUrl: "https://bsch.vault",
+    tagline: "Moments locked | Stories Unlocked",
+    email: "bsch@vault.ai",
+    copyrightYear: "2026",
   },
 
   // ============================================
@@ -178,7 +178,7 @@ export const siteConfig: SiteConfig = {
   // ============================================
   theme: {
     // Primary accent color (used for buttons, links, highlights)
-    accentColor: "#fe5102", // Aperol Orange - change to your brand color
+    accentColor: "#E1306C", // Instagram Red - BSCH.VAULT brand
     // Dark mode background
     darkBg: "#191919",
     // Light mode background
@@ -189,9 +189,9 @@ export const siteConfig: SiteConfig = {
   // NAVIGATION
   // ============================================
   nav: [
-    { id: "nav-1", label: "Insert", href: "#" },
-    { id: "nav-2", label: "Insert", href: "#" },
-    { id: "nav-3", label: "Insert", href: "#" },
+    { id: "nav-1", label: "About", href: "#" },
+    { id: "nav-2", label: "Projects", href: "#" },
+    { id: "nav-3", label: "Contact", href: "#" },
   ],
 
   // ============================================
@@ -199,77 +199,52 @@ export const siteConfig: SiteConfig = {
   // ============================================
   socialLinks: [
     {
-      id: "figma",
-      platform: "figma",
-      title: "Figma",
-      handle: "@handle",
-      url: "#",
-      icon: "figma",
-    },
-    {
-      id: "github",
-      platform: "github",
-      title: "Github",
-      handle: "@handle",
-      url: "#",
-      icon: "github",
-    },
-    {
-      id: "substack",
-      platform: "substack",
-      title: "Substack",
-      handle: "@handle",
-      url: "#",
-      icon: "substack",
-    },
-    {
       id: "instagram",
       platform: "instagram",
-      title: "Insta",
-      handle: "@handle",
-      url: "#",
+      title: "Instagram",
+      handle: "@bsch.vault",
+      url: "https://www.instagram.com/bsch.vault/",
       icon: "instagram",
     },
     {
-      id: "medium",
-      platform: "medium",
-      title: "Medium",
-      handle: "@handle",
-      url: "#",
-      icon: "medium",
+      id: "tiktok",
+      platform: "tiktok",
+      title: "TikTok",
+      handle: "@bsch.vault",
+      url: "https://www.tiktok.com/@bsch.vault",
+      icon: "tiktok",
+    },
+    {
+      id: "twitter",
+      platform: "twitter",
+      title: "Twitter/X",
+      handle: "@baskojpeg",
+      url: "https://x.com/baskojpeg",
+      icon: "twitter",
     },
   ],
 
   // ============================================
-  // RESOURCES / PROJECTS
+  // RESOURCES / PROJECTS (AFFILIATE LINKS)
   // ============================================
   resources: [
     {
-      id: "project-1",
-      title: "Insert title",
+      id: "flora-ai",
+      title: "Flora Fauna AI",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Visual systems for creative campaigns. From core identity to full-scale campaigns, zero noise, pure fidelity.",
       badge: "live",
-      link: "https://example.com/project-1",
-      buttonLabel: "Link",
+      link: "https://refer.flora.ai/bsch",
+      buttonLabel: "Explore Flora",
     },
     {
-      id: "project-2",
-      title: "Insert title",
+      id: "openart",
+      title: "OpenArt",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "AI-powered creative suite for visual generation, editing, and animation. Perfect for creators and artists.",
       badge: "live",
-      link: "https://example.com/project-2",
-      buttonLabel: "Link",
-    },
-    {
-      id: "project-3",
-      title: "Insert title",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      badge: "coming-soon",
-      link: "#",
-      buttonLabel: "Link",
+      link: "https://openart.ai/home?utm_source=tolt&utm_medium=affiliate&utm_campaign=affiliate-tolt--acq-web&ref=bsch",
+      buttonLabel: "Try OpenArt",
     },
   ],
 
@@ -279,213 +254,68 @@ export const siteConfig: SiteConfig = {
   tools: [
     {
       id: "tool-1",
-      name: "Insert title",
+      name: "Flora Fauna",
       icon: "/icons/tech/command/placeholder.svg",
-      url: "#",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      url: "https://refer.flora.ai/bsch",
+      description: "Visual system builder for creative campaigns",
       tags: [
-        { label: "Insert tag", bg: CATEGORY_COLORS.Productivity, text: "#fff" },
-        { label: "Insert category tag", ...COMMON_TAG_STYLES },
+        { label: "AI", bg: CATEGORY_COLORS.AI, text: "#fff" },
+        { label: "Affiliate", ...COMMON_TAG_STYLES },
       ],
     },
     {
       id: "tool-2",
-      name: "Insert title",
+      name: "OpenArt",
       icon: "/icons/tech/command/placeholder.svg",
-      url: "#",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      url: "https://openart.ai/home?utm_source=tolt&utm_medium=affiliate&utm_campaign=affiliate-tolt--acq-web&ref=bsch",
+      description: "AI image generation and creative tools",
       tags: [
-        { label: "Insert tag", bg: CATEGORY_COLORS.Coding, text: "#fff" },
-        { label: "Insert category tag", ...COMMON_TAG_STYLES },
+        { label: "AI", bg: CATEGORY_COLORS.AI, text: "#fff" },
+        { label: "Affiliate", ...COMMON_TAG_STYLES },
       ],
     },
     {
       id: "tool-3",
-      name: "Insert title",
+      name: "Instagram",
       icon: "/icons/tech/command/placeholder.svg",
-      url: "#",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      url: "https://www.instagram.com/bsch.vault/",
+      description: "Follow for AI visual content and updates",
       tags: [
-        { label: "Insert tag", bg: CATEGORY_COLORS.Design, text: "#fff" },
-        { label: "Insert category tag", ...COMMON_TAG_STYLES },
+        { label: "Social", bg: CATEGORY_COLORS.Social, text: "#fff" },
+        { label: "Creator", ...COMMON_TAG_STYLES },
       ],
     },
     {
       id: "tool-4",
-      name: "Insert title",
+      name: "TikTok",
       icon: "/icons/tech/command/placeholder.svg",
-      url: "#",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      url: "https://www.tiktok.com/@bsch.vault",
+      description: "Short-form AI visual content",
       tags: [
-        { label: "Insert tag", bg: CATEGORY_COLORS.Content, text: "#fff" },
-        { label: "Insert category tag", ...COMMON_TAG_STYLES },
+        { label: "Social", bg: CATEGORY_COLORS.Social, text: "#fff" },
+        { label: "Creator", ...COMMON_TAG_STYLES },
       ],
     },
     {
       id: "tool-5",
-      name: "Insert title",
+      name: "Twitter/X",
       icon: "/icons/tech/command/placeholder.svg",
-      url: "#",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      url: "https://x.com/baskojpeg",
+      description: "AI art and visual exploration updates",
       tags: [
-        { label: "Insert tag", bg: CATEGORY_COLORS.Productivity, text: "#fff" },
-        { label: "Insert category tag", ...COMMON_TAG_STYLES },
-      ],
-    },
-    {
-      id: "tool-6",
-      name: "Insert title",
-      icon: "/icons/tech/command/placeholder.svg",
-      url: "#",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      tags: [
-        { label: "Insert tag", bg: CATEGORY_COLORS.Coding, text: "#fff" },
-        { label: "Insert category tag", ...COMMON_TAG_STYLES },
-      ],
-    },
-    {
-      id: "tool-7",
-      name: "Insert title",
-      icon: "/icons/tech/command/placeholder.svg",
-      url: "#",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      tags: [
-        { label: "Insert tag", bg: CATEGORY_COLORS.Design, text: "#fff" },
-        { label: "Insert category tag", ...COMMON_TAG_STYLES },
-      ],
-    },
-    {
-      id: "tool-8",
-      name: "Insert title",
-      icon: "/icons/tech/command/placeholder.svg",
-      url: "#",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      tags: [
-        { label: "Insert tag", bg: CATEGORY_COLORS.Content, text: "#fff" },
-        { label: "Insert category tag", ...COMMON_TAG_STYLES },
-      ],
-    },
-    {
-      id: "tool-9",
-      name: "Insert title",
-      icon: "/icons/tech/command/placeholder.svg",
-      url: "#",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      tags: [
-        { label: "Insert tag", bg: CATEGORY_COLORS.Productivity, text: "#fff" },
-        { label: "Insert category tag", ...COMMON_TAG_STYLES },
-      ],
-    },
-    {
-      id: "tool-10",
-      name: "Insert title",
-      icon: "/icons/tech/command/placeholder.svg",
-      url: "#",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      tags: [
-        { label: "Insert tag", bg: CATEGORY_COLORS.Coding, text: "#fff" },
-        { label: "Insert category tag", ...COMMON_TAG_STYLES },
-      ],
-    },
-    {
-      id: "tool-11",
-      name: "Insert title",
-      icon: "/icons/tech/command/placeholder.svg",
-      url: "#",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      tags: [
-        { label: "Insert tag", bg: CATEGORY_COLORS.Design, text: "#fff" },
-        { label: "Insert category tag", ...COMMON_TAG_STYLES },
-      ],
-    },
-    {
-      id: "tool-12",
-      name: "Insert title",
-      icon: "/icons/tech/command/placeholder.svg",
-      url: "#",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      tags: [
-        { label: "Insert tag", bg: CATEGORY_COLORS.Content, text: "#fff" },
-        { label: "Insert category tag", ...COMMON_TAG_STYLES },
-      ],
-    },
-    {
-      id: "tool-13",
-      name: "Insert title",
-      icon: "/icons/tech/command/placeholder.svg",
-      url: "#",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      tags: [
-        { label: "Insert tag", bg: CATEGORY_COLORS.Productivity, text: "#fff" },
-        { label: "Insert category tag", ...COMMON_TAG_STYLES },
-      ],
-    },
-    {
-      id: "tool-14",
-      name: "Insert title",
-      icon: "/icons/tech/command/placeholder.svg",
-      url: "#",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      tags: [
-        { label: "Insert tag", bg: CATEGORY_COLORS.Coding, text: "#fff" },
-        { label: "Insert category tag", ...COMMON_TAG_STYLES },
-      ],
-    },
-    {
-      id: "tool-15",
-      name: "Insert title",
-      icon: "/icons/tech/command/placeholder.svg",
-      url: "#",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      tags: [
-        { label: "Insert tag", bg: CATEGORY_COLORS.Design, text: "#fff" },
-        { label: "Insert category tag", ...COMMON_TAG_STYLES },
-      ],
-    },
-    {
-      id: "tool-16",
-      name: "Insert title",
-      icon: "/icons/tech/command/placeholder.svg",
-      url: "#",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      tags: [
-        { label: "Insert tag", bg: CATEGORY_COLORS.Content, text: "#fff" },
-        { label: "Insert category tag", ...COMMON_TAG_STYLES },
+        { label: "Social", bg: CATEGORY_COLORS.Social, text: "#fff" },
+        { label: "Creator", ...COMMON_TAG_STYLES },
       ],
     },
   ],
 
   // ============================================
-  // BLOG / RSS FEED
+  // BLOG SECTION
   // ============================================
   blog: {
-    enabled: true,
-    // Add your RSS feed URL to fetch live blog posts (e.g., "https://yourblog.substack.com/feed")
-    // See docs/04-recent-blogs.md for the dynamic RSS component
+    enabled: false,
     feedUrl: "",
-    title: "Recent Blogs",
-    // Add your Substack URL to show a subscribe form (e.g., "https://yourblog.substack.com")
+    title: "Recent Posts",
     subscribeUrl: "",
   },
-};
-
-// ============================================
-// HELPER EXPORTS
-// ============================================
-
-/** Get the base path for assets (used in components) */
-export const getBasePath = () => {
-  // In development or when basePath is not set, return empty string
-  // In production with GitHub Pages, this should match next.config.ts basePath
-  return process.env.NODE_ENV === "production" ? "/linktree-alternative" : "";
-};
-
-/** Prepend base path to asset URLs */
-export const withBasePath = (path: string) => {
-  const basePath = getBasePath();
-  // If path already starts with basePath or is external URL, return as-is
-  if (path.startsWith(basePath) || path.startsWith("http")) {
-    return path;
-  }
-  return `${basePath}${path}`;
 };
