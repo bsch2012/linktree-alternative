@@ -1,35 +1,36 @@
 /**
- * Linktree Alternative Theme
+ * BSCH.VAULT Theme
  *
- * Color Strategy: "Warm Neutrals with Aperol Orange Accent"
- * Uses Charcoal and Vanilla as foundation for warmth, with a customizable
- * orange accent color for interactive elements.
+ * Color Strategy: "Instagram Red + Orange Accent"
+ * Uses Instagram gradient colors (#E1306C to #F77737) as primary brand,
+ * with warm neutrals as foundation.
  *
  * Primary Colors:
- * - Accent Orange (#fe5102) - Primary accent for CTAs, links, badges
- * - Charcoal (#191919) - Warm dark neutral, replaces pure black
- * - Vanilla (#FFFAEE) - Warm light neutral, replaces pure white
+ * - Instagram Red (#E1306C) - Primary accent for CTAs, links, badges
+ * - Warm Orange (#F77737) - Secondary accent
+ * - Charcoal (#191919) - Warm dark neutral
+ * - Vanilla (#FFFAEE) - Warm light neutral
  *
- * To customize the accent color, update the brand scale below.
+ * Brand Identity: Moments locked | Stories Unlocked
  */
 
 /* ============================================
    PRIMITIVE COLOR SCALES
    ============================================ */
 :root {
-  /* Brand Scale (Aperol Orange #fe5102) - Customize for your brand */
-  --color-brand-25: #fffaf5;
-  --color-brand-50: #fff3eb;
-  --color-brand-100: #ffe4d4;
-  --color-brand-200: #ffc8a8;
-  --color-brand-300: #ffa370;
-  --color-brand-400: #ff7a38;
-  --color-brand-500: #fe5102;
-  --color-brand-600: #e64400;
-  --color-brand-700: #bf3600;
-  --color-brand-800: #992d05;
-  --color-brand-900: #7a280a;
-  --color-brand-950: #431302;
+  /* Brand Scale (Instagram Red #E1306C + Orange #F77737) - BSCH.VAULT */
+  --color-brand-25: #fef5f8;
+  --color-brand-50: #fde8f1;
+  --color-brand-100: #fcc5e0;
+  --color-brand-200: #fa9cc9;
+  --color-brand-300: #f77fb0;
+  --color-brand-400: #f25a97;
+  --color-brand-500: #E1306C;
+  --color-brand-600: #c72a60;
+  --color-brand-700: #ad2454;
+  --color-brand-800: #931e48;
+  --color-brand-900: #79183c;
+  --color-brand-950: #5f1230;
 
   /* Warm Gray Scale (tinted toward Vanilla for cohesive brand feel) */
   --color-gray-25: #fdfcfb;
@@ -251,9 +252,9 @@
   --bg-overlay: rgba(0, 0, 0, 0.8);
 
   /* Brand Background (adjusted for dark) */
-  --bg-brand-primary: #2a1508;
-  --bg-brand-primary_alt: #3d1e0c;
-  --bg-brand-secondary: #3d1e0c;
+  --bg-brand-primary: #3d1a28;
+  --bg-brand-primary_alt: #5a2640;
+  --bg-brand-secondary: #5a2640;
   --bg-brand-solid: var(--color-brand-500);
   --bg-brand-solid_hover: var(--color-brand-400);
   --bg-brand-section: var(--color-brand-900);
@@ -313,13 +314,13 @@
   --fg-success-secondary: var(--color-success-300);
 
   /* Border (dark) */
-  --border-primary: #3d3d3d;
-  --border-secondary: #2e2e2e;
-  --border-tertiary: #242424;
-  --border-disabled: #2e2e2e;
-  --border-disabled_subtle: #242424;
-  --border-brand: var(--color-brand-500);
-  --border-brand_alt: var(--color-brand-600);
+  --border-primary: var(--color-gray-700);
+  --border-secondary: var(--color-gray-700);
+  --border-tertiary: var(--color-gray-800);
+  --border-disabled: var(--color-gray-700);
+  --border-disabled_subtle: var(--color-gray-800);
+  --border-brand: var(--color-brand-700);
+  --border-brand_alt: var(--color-brand-800);
   --border-brand-solid: var(--color-brand-500);
   --border-brand-solid_alt: var(--color-brand-400);
   --border-error: var(--color-error-700);
@@ -333,38 +334,38 @@
   --button-primary-bg: var(--color-brand-500);
   --button-primary-bg_hover: var(--color-brand-400);
   --button-primary-border: var(--color-brand-500);
-  --button-primary-icon: var(--color-brand-200);
-  --button-primary-icon_hover: var(--color-brand-100);
+  --button-primary-icon: var(--color-brand-700);
+  --button-primary-icon_hover: var(--color-brand-800);
 
   --button-secondary-fg: var(--color-gray-300);
-  --button-secondary-fg_hover: var(--color-vanilla);
-  --button-secondary-bg: #1f1f1f;
-  --button-secondary-bg_hover: #2e2e2e;
-  --button-secondary-border: #3d3d3d;
+  --button-secondary-fg_hover: var(--color-gray-200);
+  --button-secondary-bg: var(--color-gray-800);
+  --button-secondary-bg_hover: var(--color-gray-700);
+  --button-secondary-border: var(--color-gray-700);
 
   --button-tertiary-fg: var(--color-gray-400);
   --button-tertiary-fg_hover: var(--color-gray-300);
   --button-tertiary-bg: transparent;
-  --button-tertiary-bg_hover: #242424;
+  --button-tertiary-bg_hover: var(--color-gray-800);
 
   /* Focus Ring (dark) */
-  --focus-ring: var(--color-brand-400);
-  --focus-ring-error: var(--color-error-400);
+  --focus-ring: var(--color-brand-500);
+  --focus-ring-error: var(--color-error-500);
 
-  /* Shadows (dark - more subtle, darker) */
-  --shadow-xs: 0px 1px 2px rgba(0, 0, 0, 0.2);
-  --shadow-sm: 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
-  --shadow-md: 0px 4px 8px -2px rgba(0, 0, 0, 0.3), 0px 2px 4px -2px rgba(0, 0, 0, 0.2);
-  --shadow-lg: 0px 12px 16px -4px rgba(0, 0, 0, 0.3), 0px 4px 6px -2px rgba(0, 0, 0, 0.15);
-  --shadow-xl: 0px 20px 24px -4px rgba(0, 0, 0, 0.3), 0px 8px 8px -4px rgba(0, 0, 0, 0.15);
-  --shadow-2xl: 0px 24px 48px -12px rgba(0, 0, 0, 0.4);
-  --shadow-3xl: 0px 32px 64px -12px rgba(0, 0, 0, 0.35);
+  /* Shadows (dark) - adjusted for dark backgrounds */
+  --shadow-xs: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0px 1px 3px rgba(0, 0, 0, 0.4), 0px 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0px 4px 8px -2px rgba(0, 0, 0, 0.5), 0px 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0px 12px 16px -4px rgba(0, 0, 0, 0.5), 0px 4px 6px -2px rgba(0, 0, 0, 0.2);
+  --shadow-xl: 0px 20px 24px -4px rgba(0, 0, 0, 0.6), 0px 8px 8px -4px rgba(0, 0, 0, 0.3);
+  --shadow-2xl: 0px 24px 48px -12px rgba(0, 0, 0, 0.8);
+  --shadow-3xl: 0px 32px 64px -12px rgba(0, 0, 0, 0.8);
 
-  /* Ring/outline (dark) */
-  --ring-brand: 0 0 0 4px rgba(254, 81, 2, 0.24);
-  --ring-gray: 0 0 0 4px rgba(255, 255, 255, 0.12);
-  --ring-error: 0 0 0 4px rgba(240, 68, 56, 0.24);
+  /* Ring/outline for buttons (dark) */
+  --ring-brand: 0 0 0 4px var(--color-brand-900);
+  --ring-gray: 0 0 0 4px var(--color-gray-800);
+  --ring-error: 0 0 0 4px var(--color-error-900);
   --ring-primary: var(--border-primary);
-  --ring-disabled_subtle: #3d3d3d;
+  --ring-disabled_subtle: var(--color-gray-700);
   --ring-error_subtle: var(--color-error-800);
 }
